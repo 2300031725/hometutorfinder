@@ -2,7 +2,11 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import config from '../config';
 
+<<<<<<< HEAD
 const DisplaySubject = () => 
+=======
+const DisplaySubjects = () => 
+>>>>>>> f2f7496d84e70ec27f31383b7dcf13bdd5dc2b03
 {
   const [subjects, setSubjects] = useState([]);
   const [selectedId, setSelectedId] = useState('');
@@ -25,7 +29,11 @@ const DisplaySubject = () =>
 
   const fetchSubjectById = async (id) => {
     try {
+<<<<<<< HEAD
       const response = await axios.post(`${config.url}/subject/displaysubjectbyid?pid=${id}`);
+=======
+      const response = await axios.post(`${config.url}/subject/displaysubjectbyid?sid=${id}`);
+>>>>>>> f2f7496d84e70ec27f31383b7dcf13bdd5dc2b03
       setSubjectDetails(response.data);
       setError('');
     } catch (err) {
@@ -88,4 +96,8 @@ const DisplaySubject = () =>
   );
 };
 
+<<<<<<< HEAD
 export default DisplaySubject;
+=======
+export default DisplaySubjects;
+>>>>>>> f2f7496d84e70ec27f31383b7dcf13bdd5dc2b03

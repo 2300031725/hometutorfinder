@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  .login-container {
   max-width: 400px;
   margin: 50px auto;
@@ -161,3 +162,135 @@
 .privacy-link:hover {
   text-decoration: underline;
 }
+=======
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .login-title {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .login-subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .tab-navigation {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .tab-button {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    color: #666;
+    background: #f9f9f9;
+    border: none;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+  }
+  
+  .tab-button.active {
+    color: #6c63ff;
+    border-bottom: 2px solid #6c63ff;
+  }
+  
+  .tab-button:hover {
+    color: #6c63ff;
+  }
+  
+  .login-form {
+    text-align: left;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .forgot-password-link {
+    font-size: 0.9rem;
+    color: #6c63ff;
+    text-decoration: none;
+  }
+  
+  .forgot-password-link:hover {
+    text-decoration: underline;
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    color: #fff;
+    background: #6c63ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background: #574bdb;
+  }
+  
+  .signup-text {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .signup-link {
+    color: #6c63ff;
+    text-decoration: none;
+  }
+  
+  .signup-link:hover {
+    text-decoration: underline;
+  }
+  
+  .terms-text {
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: #999;
+  }
+  
+  .terms-link,
+  .privacy-link {
+    color: #6c63ff;
+    text-decoration: none;
+  }
+  
+  .terms-link:hover,
+  .privacy-link:hover {
+    text-decoration: underline;
+  }
+>>>>>>> f2f7496d84e70ec27f31383b7dcf13bdd5dc2b03

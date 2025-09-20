@@ -10,12 +10,17 @@ import TutorLogin from '../tutor/TutorLogin';
 import NotFound from './NotFound';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserGraduate, faChalkboardTeacher, faUserShield } from '@fortawesome/free-solid-svg-icons';
+<<<<<<< HEAD
+=======
+import logo from './logo.png'; // Replace with your image path
+>>>>>>> f2f7496d84e70ec27f31383b7dcf13bdd5dc2b03
 
 
 export default function MainNavBar() {
   return (
     <div>
       <nav className="navbar">
+<<<<<<< HEAD
         <div className="logo" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
           <img
             src="/logo.png" // 🔁 Replace with your image path
@@ -24,6 +29,11 @@ export default function MainNavBar() {
             style={{ height: '40px', width: '40px', objectFit: 'contain' }}
           />
           <span style={{ fontWeight: 'bold', fontSize: '1.4rem', letterSpacing: '1px' }}>Home Tutor Finder</span>
+=======
+      <div className="logo">
+          <img src={logo} alt="Logo" className="logo-image" />
+          Home Tutor Finder
+>>>>>>> f2f7496d84e70ec27f31383b7dcf13bdd5dc2b03
         </div>
         <ul className="nav-links">
           <li><Link to="/">Home</Link></li>

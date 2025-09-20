@@ -43,7 +43,11 @@ export default function StudentLogin() {
 
   return (
     <div className="login-container">
+<<<<<<< HEAD
       <h2 className="login-title">Login to SmartTutor</h2>
+=======
+      <h2 className="login-title">Login to Home Tutor</h2>
+>>>>>>> f2f7496d84e70ec27f31383b7dcf13bdd5dc2b03
       <p className="login-subtitle">Enter your credentials to access your account</p>
 
       {/* Login Form */}
@@ -56,7 +60,11 @@ export default function StudentLogin() {
           <input
             type="text"
             id="username"
+<<<<<<< HEAD
             placeholder="Enter your Username"
+=======
+            placeholder="Enter your username"
+>>>>>>> f2f7496d84e70ec27f31383b7dcf13bdd5dc2b03
             value={formData.username}
             onChange={handleChange}
             required
@@ -73,6 +81,7 @@ export default function StudentLogin() {
             required
           />
         </div>
+<<<<<<< HEAD
         <div className="form-footer">
           <a href="/forgot-password" className="forgot-password-link">Forgot password?</a>
         </div>
@@ -85,6 +94,10 @@ export default function StudentLogin() {
       <p className="terms-text">
         By logging in, you agree to our <a href="/terms" className="terms-link">Terms of Service</a> and <a href="/privacy" className="privacy-link">Privacy Policy</a>.
       </p>
+=======
+        <button type="submit" className="login-button">Login as Student</button>
+      </form>
+>>>>>>> f2f7496d84e70ec27f31383b7dcf13bdd5dc2b03
     </div>
   );
 }

@@ -5,9 +5,15 @@ import StudentProfile from './StudentProfile';
 import StudentLogin from './StudentLogin';
 import { useAuth } from '../contextapi/AuthContext';
 import UpdateProfile from './UpdateProfile';
+<<<<<<< HEAD
 import BookedEvents from './BookedEvents';
 import ViewAllEvents from './ViewAllEvents';
 import BookEvent from './BookEvent';
+=======
+import BookedEvents from './BookedSessions';
+import ViewAllEvents from './ViewAllSessions';
+import BookEvent from './BookSession';
+>>>>>>> f2f7496d84e70ec27f31383b7dcf13bdd5dc2b03
 
 export default function StudentNavBar() 
 {

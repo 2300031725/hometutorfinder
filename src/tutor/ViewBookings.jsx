@@ -47,22 +47,38 @@ export default function ViewBookings() {
   
   return (
     <div style={{ padding: '20px' }}>
+<<<<<<< HEAD
       <h3 style={{ textAlign: 'center', textDecoration: 'underline' }}>Bookings for My Events</h3>
       {error && <p style={{ color: 'red', textAlign: 'center' }}>{error}</p>}
       {bookings.length === 0 ? (
         <p style={{ textAlign: 'center' }}>No bookings available for your events.</p>
+=======
+      <h3 style={{ textAlign: 'center', textDecoration: 'underline' }}>Bookings for My Sessions</h3>
+      {error && <p style={{ color: 'red', textAlign: 'center' }}>{error}</p>}
+      {bookings.length === 0 ? (
+        <p style={{ textAlign: 'center' }}>No bookings available for your sessions.</p>
+>>>>>>> f2f7496d84e70ec27f31383b7dcf13bdd5dc2b03
       ) : (
         <table style={{ width: '100%', textAlign: 'center', marginTop: '20px' }}>
           <thead style={{ backgroundColor: '#f2f2f2' }}>
             <tr>
               <th>Booking ID</th>
+<<<<<<< HEAD
               <th>Event ID</th>
               <th>Event Title</th>
+=======
+              <th>Session ID</th>
+              <th>Session Tutorname</th>
+>>>>>>> f2f7496d84e70ec27f31383b7dcf13bdd5dc2b03
               <th>Student Name</th>
               <th>Student Email</th>
               <th>Start Date</th>
               <th>End Date</th>
+<<<<<<< HEAD
               <th>Booked Capacity</th>
+=======
+              <th>Booked Duration</th>
+>>>>>>> f2f7496d84e70ec27f31383b7dcf13bdd5dc2b03
               <th>Status</th>
               <th>Booking Time</th>
               <th>Action</th>
@@ -72,13 +88,22 @@ export default function ViewBookings() {
             {bookings.map((booking, index) => (
               <tr key={index}>
                 <td>{booking.id}</td>
+<<<<<<< HEAD
                 <td>{booking.event.id}</td>
                 <td>{booking.event.title}</td>
+=======
+                <td>{booking.session.id}</td>
+                <td>{booking.session.title}</td>
+>>>>>>> f2f7496d84e70ec27f31383b7dcf13bdd5dc2b03
                 <td>{booking.student.name}</td>
                 <td>{booking.student.email}</td>
                 <td>{booking.startdate}</td>
                 <td>{booking.enddate}</td>
+<<<<<<< HEAD
                 <td>{booking.bookedcapacity}</td>
+=======
+                <td>{booking.bookedduration}</td>
+>>>>>>> f2f7496d84e70ec27f31383b7dcf13bdd5dc2b03
                 <td>{booking.status}</td>
                 <td>{new Date(booking.bookingtime).toLocaleString()}</td>
                 <td>

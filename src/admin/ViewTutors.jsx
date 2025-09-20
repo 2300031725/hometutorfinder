@@ -12,10 +12,17 @@ export default function ViewTutors()
     const [error, setError] = useState("");
 
     const displayTutors = async () => 
+<<<<<<< HEAD
     {
         try 
         {
             const response = await axios.get(`${config.url}/admin/viewalleventtutors`);
+=======
+      {
+        try 
+        {
+            const response = await axios.get(`${config.url}/admin/viewalltutors`);
+>>>>>>> f2f7496d84e70ec27f31383b7dcf13bdd5dc2b03
             setTutors(response.data);
         } 
         catch (err) 
@@ -25,6 +32,7 @@ export default function ViewTutors()
     };
 
     useEffect(() => {
+<<<<<<< HEAD
         displayTutors();
     }, []);
 
@@ -43,11 +51,35 @@ export default function ViewTutors()
             toast.error("Deletion failed: " + err.message); // show error toast
         }
     };
+=======
+      displayTutors();
+    }, []);
+
+    const deleteTutor = async (tid) => 
+        {
+            try 
+            {
+                const response = await axios.delete(`${config.url}/admin/deletetutor?tid=${tid}`);
+                toast.success(response.data);  // show success toast
+                displayTutors();           // refresh managers list
+            } 
+            catch (err) 
+            {
+                console.log(err);
+                setError("Unexpected Error Occurred... " + err.message);
+                toast.error("Deletion failed: " + err.message); // show error toast
+            }
+        };
+>>>>>>> f2f7496d84e70ec27f31383b7dcf13bdd5dc2b03
 
     return (
         <div style={{ padding: "20px" }}>
             <h3 style={{ textAlign: "center", color: "black", fontWeight: "bolder" }}>
+<<<<<<< HEAD
                 <u>View All Event Tutors</u>
+=======
+                <u>View All Tutors</u>
+>>>>>>> f2f7496d84e70ec27f31383b7dcf13bdd5dc2b03
             </h3>
 
             <ToastContainer position="top-center" autoClose={4000} />
@@ -58,7 +90,11 @@ export default function ViewTutors()
                 </p>
             ) : tutors.length === 0 ? (
                 <p style={{ textAlign: "center", fontSize: "18px", fontWeight: "bold", color: "red" }}>
+<<<<<<< HEAD
                     No Event Tutors Data Found
+=======
+                    No Tutors Data Found
+>>>>>>> f2f7496d84e70ec27f31383b7dcf13bdd5dc2b03
                 </p>
             ) : (
                 <table style={{ width: "100%", borderCollapse: "collapse", marginTop: "20px" }}>
@@ -71,8 +107,13 @@ export default function ViewTutors()
                             <th>Email</th>
                             <th>Username</th>
                             <th>Mobile No</th>
+<<<<<<< HEAD
                             <th>Company Name</th>
                             <th>Company Location</th>
+=======
+                            <th>Experience</th>
+                            <th>Location</th>
+>>>>>>> f2f7496d84e70ec27f31383b7dcf13bdd5dc2b03
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -86,8 +127,13 @@ export default function ViewTutors()
                                 <td>{tutor.email}</td>
                                 <td>{tutor.username}</td>
                                 <td>{tutor.mobileno}</td>
+<<<<<<< HEAD
                                 <td>{tutor.company_name}</td>
                                 <td>{tutor.company_location}</td>
+=======
+                                <td>{tutor.experience}</td>
+                                <td>{tutor.location}</td>
+>>>>>>> f2f7496d84e70ec27f31383b7dcf13bdd5dc2b03
                                 <td>
                                     <Button
                                         variant="outlined"
