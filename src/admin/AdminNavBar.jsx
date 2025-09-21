@@ -25,13 +25,8 @@ export default function AdminNavBar()
         <div className="logo">Welcome Admin</div>
         <ul className="nav-links">
           <li><Link to="/adminhome">Home</Link></li>
-<<<<<<< HEAD
-          <li><Link to="/addeventtutor">Add Event Tutors</Link></li>
-          <li><Link to="/viewtutors">View Event Tutors</Link></li>
-=======
           <li><Link to="/addeventtutor">Add Tutors</Link></li>
           <li><Link to="/viewtutors">View Tutors</Link></li>
->>>>>>> f2f7496d84e70ec27f31383b7dcf13bdd5dc2b03
           <li><Link to="/viewallstudents">View All Students</Link></li>
 
           <li className="dropdown">
