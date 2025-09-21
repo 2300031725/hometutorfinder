@@ -9,14 +9,10 @@ export default function StudentRegistration() {
     gender: '',
     dob: '',
     email: '',
-    username: '',
-<<<<<<< HEAD
-    password: '',
-=======
-    password: '',      
->>>>>>> f2f7496d84e70ec27f31383b7dcf13bdd5dc2b03
-    mobileno: '',
-    location: ''
+  username: '',
+  password: '',
+  mobileno: '',
+  location: ''
   });
 
   const [message, setMessage] = useState('');
