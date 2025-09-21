@@ -12,11 +12,7 @@ export default function TutorLogin() {
   });
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
-<<<<<<< HEAD
-
-=======
   const [activeTab, setActiveTab] = useState('Tutor'); // Default tab for Tutor
->>>>>>> f2f7496d84e70ec27f31383b7dcf13bdd5dc2b03
 
   const navigate = useNavigate();
   const { setIsTutorLoggedIn } = useAuth();
@@ -48,56 +44,10 @@ export default function TutorLogin() {
 
   return (
     <div className="login-container">
-<<<<<<< HEAD
       <h2 className="login-title">Login to SmartTutor</h2>
       <p className="login-subtitle">Enter your credentials to access your account</p>
 
 
-
-      {/* Login Form */}
-      <form onSubmit={handleSubmit} className="login-form">
-        {message && <p className="form-message success">{message}</p>}
-        {error && <p className="form-message error">{error}</p>}
-
-        <div className="form-group">
-          <label>Email</label>
-          <input
-            type="text"
-            id="username"
-            placeholder="your.email@example.com"
-            value={formData.username}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <div className="form-group">
-          <label>Password</label>
-          <input
-            type="password"
-            id="password"
-            placeholder="Enter your password"
-            value={formData.password}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <div className="form-footer">
-          <a href="/forgot-password" className="forgot-password-link">Forgot password?</a>
-        </div>
-        <button type="submit" className="login-button">Login as Tutor</button>
-      </form>
-
-      <p className="signup-text">
-        Don’t have an account? <a href="/signup" className="signup-link">Sign up</a>
-      </p>
-      <p className="terms-text">
-        By logging in, you agree to our <a href="/terms" className="terms-link">Terms of Service</a> and <a href="/privacy" className="privacy-link">Privacy Policy</a>.
-      </p>
-=======
-      <h2 className="login-title">Login to Home Tutor</h2>
-      <p className="login-subtitle">Enter your credentials to access your account</p>
-
-      
 
       {/* Login Form */}
       {activeTab === 'Tutor' && (
@@ -106,11 +56,11 @@ export default function TutorLogin() {
           {error && <p className="form-message error">{error}</p>}
 
           <div className="form-group">
-            <label>Username</label>
+            <label>Email</label>
             <input
               type="text"
               id="username"
-              placeholder="Enter your username"
+              placeholder="your.email@example.com"
               value={formData.username}
               onChange={handleChange}
               required
@@ -127,11 +77,19 @@ export default function TutorLogin() {
               required
             />
           </div>
-          
+          <div className="form-footer">
+            <a href="/forgot-password" className="forgot-password-link">Forgot password?</a>
+          </div>
           <button type="submit" className="login-button">Login as Tutor</button>
         </form>
       )}
->>>>>>> f2f7496d84e70ec27f31383b7dcf13bdd5dc2b03
+
+      <p className="signup-text">
+        Don’t have an account? <a href="/signup" className="signup-link">Sign up</a>
+      </p>
+      <p className="terms-text">
+        By logging in, you agree to our <a href="/terms" className="terms-link">Terms of Service</a> and <a href="/privacy" className="privacy-link">Privacy Policy</a>.
+      </p>
     </div>
   );
 }
